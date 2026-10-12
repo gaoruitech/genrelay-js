@@ -1,0 +1,31 @@
+{
+  "name": "genrelay",
+  "version": "0.1.0",
+  "description": "JavaScript/TypeScript client for the GenRelay generative media API: video and image generation with Veo 3.1, Grok Imagine, Nano Banana and GPT Image 2",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": ["dist", "README.md", "LICENSE"],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
+    "test": "node test/mock.mjs"
+  },
+  "keywords": ["genrelay", "veo", "veo-3", "grok-imagine", "nano-banana", "gpt-image", "video-generation", "image-generation", "text-to-video", "generative-ai", "api-client"],
+  "author": "GenRelay",
+  "license": "MIT",
+  "homepage": "https://genrelay.ai",
+  "repository": { "type": "git", "url": "git+https://github.com/gaoruitech/genrelay-js.git" },
+  "bugs": { "url": "https://github.com/gaoruitech/genrelay-js/issues" },
+  "engines": { "node": ">=18" },
+  "devDependencies": {
+    "@types/node": "^26.6.2",
+    "typescript": "^7.0.2"
+  }
+}
